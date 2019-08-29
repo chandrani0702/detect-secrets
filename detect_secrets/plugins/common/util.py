@@ -15,7 +15,7 @@ from ..keyword import KeywordDetector                       # noqa: F401
 from ..private_key import PrivateKeyDetector                # noqa: F401
 from ..slack import SlackDetector                           # noqa: F401
 from ..stripe import StripeDetector                         # noqa: F401
-
+from ..jwt  import JwtKeyDetector                           # noqa: F401
 
 @lru_cache(maxsize=1)
 def get_mapping_from_secret_type_to_class_name():
